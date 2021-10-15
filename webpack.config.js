@@ -6,7 +6,7 @@ const sveltePath = path.join(__dirname, "node_modules", "svelte");
 const mode = process.env.NODE_ENV || "development";
 
 module.exports = {
-  mode: "production",
+  mode,
   entry: {
     bundle: [path.join(__dirname, "src", "index.js")],
   },
