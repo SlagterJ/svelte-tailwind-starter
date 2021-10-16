@@ -4,12 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack"
+    "start": "routify & webpack-dev-server",
+    "build": "routify -b && webpack"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
+    "@roxi/routify": "^2.18.3",
     "autoprefixer": "^10.3.7",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.4.0",

@@ -45,7 +45,11 @@ module.exports = {
       // ***** JAVASCRIPT *****
       {
         test: /\.(?:svelte|m?js)$/,
-        include: [path.join(__dirname, "src"), path.dirname(sveltePath)],
+        include: [
+          path.join(__dirname, "src"),
+          path.dirname(sveltePath),
+          path.join(__dirname, "node_modules", "@roxi/routify"),
+        ],
         exclude: /node_modules/,
         use: "babel-loader",
       },

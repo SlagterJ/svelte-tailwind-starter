@@ -1,3 +1,6 @@
-<div>
-  <h1>Hello, World!</h1>
-</div>
+<script>
+  import { Router } from "@roxi/routify";
+  import { routes } from "../.routify/routes";
+</script>
+
+<Router {routes} />
