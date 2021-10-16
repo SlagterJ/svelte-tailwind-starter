@@ -47,19 +47,7 @@ module.exports = {
         test: /\.(?:svelte|m?js)$/,
         include: [path.join(__dirname, "src"), path.dirname(sveltePath)],
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: [
-              [
-                "@babel/preset-env",
-                {
-                  targets: "ie >= 9",
-                },
-              ],
-            ],
-          },
-        },
+        use: "babel-loader",
       },
       // ***** SVELTE *****
       {
